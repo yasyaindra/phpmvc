@@ -57,4 +57,9 @@ class Database {
         $this->execute();
         return $this->stmt->fetch();
     }
+
+    public function rowCount() {
+        return $this->stmt->rowCount();
+    }
+    
 }
